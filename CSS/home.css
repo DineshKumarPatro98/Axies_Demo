@@ -1,0 +1,671 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap");
+
+:root {
+  --primary-color: #5142fc;
+  --secondar-color: #ebebeb;
+  --background-secondary-color: #343444;
+  --white-2: #8a8aa0;
+  --on-surface: #fff;
+  --on-surface-white: #1f1f2c;
+  --background: #14141f;
+  --gardient: linear-gradient(217deg, #e250e5 0%, #4b50e6 100%);
+  --background-footer: #0d0d11;
+  --secondary-white: #7a798a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+}
+html,
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.conatainer,
+.axContainer {
+  width: 100% !important;
+  padding: 0 80px;
+  margin: 0 auto !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 80px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 0 80px !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1280px !important;
+    padding: 0px 80px !important;
+  }
+}
+
+.axBtn_Primary {
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: var(--on-surface);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 17px 36px;
+}
+.axBtn_Secondary {
+  width: 154px;
+  border-radius: 30px;
+  border: 1px solid var(--on-surface);
+  color: var(--on-surface);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 17px 36px;
+}
+
+.caption_2 {
+  color: var(--white-2);
+  font-size: 6px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.buttonSmall {
+  color: var(--on-surface);
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+/* Custom classes for margin and padding */
+.ms-36 {
+  margin-left: 36px;
+}
+.ms-60 {
+  margin-left: 60px;
+}
+.ms-30 {
+  margin-left: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-28 {
+  margin-bottom: 28px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.me-12 {
+  margin-right: 12px;
+}
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+  .ms-lg-36 {
+    margin-left: 36px;
+  }
+  .ms-lg-60 {
+    margin-left: 60px;
+  }
+  .mb-lg-40 {
+    margin-bottom: 40px;
+  }
+}
+
+/* Header Section CSS Start */
+.navbar {
+  background: var(--background);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  opacity: 0.9;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.brandName {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
+  color: var(--on-surface);
+}
+.navbar-brand .logo {
+  max-width: 30px;
+  max-height: 40px;
+  aspect-ratio: 1/1;
+}
+.navbarSearchBtn {
+  border-radius: 0px 12px 12px 0px;
+  background: var(--primary-color);
+}
+.navbarSearch {
+  /* max-height: 40px; */
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid var(--background-secondary-color);
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.navbarSearch:focus {
+  background-color: transparent !important;
+  border: 2px solid var(--background-secondary-color) !important;
+  box-shadow: 0 1px 2px var(--background-secondary-color) !important;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-link {
+  color: var(--on-surface);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.nav-link:hover {
+  color: var(--on-surface);
+}
+.navbarLoginContainer .notification,
+.navbarLoginContainer .loginIcon {
+  color: var(--on-surface);
+  flex-shrink: 0;
+  background-color: var(--background-secondary-color);
+  border-radius: 8px;
+  padding: 6px;
+}
+.notificationBubble {
+  left: 20px;
+  top: -12px;
+}
+@media only screen and (min-width: 992px) {
+  .brandName {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .navbarLoginContainer .notification,
+  .navbarLoginContainer .loginIcon {
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .notificationBubble {
+    left: 32px;
+  }
+}
+/* Header Section CSS end */
+
+/* Top Banner section CSS start */
+
+.bannerSection {
+  padding: 80px 0px;
+  box-shadow: 0 1px 8px var(--background-secondary-color);
+}
+.bannerSectionHeading {
+  color: var(--on-surface);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 68px;
+}
+.bannerSectionHeading > span {
+  background: var(--gardient);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.bannerImg {
+  max-width: 354px;
+  max-height: 588px;
+  aspect-ratio: 1/1.6;
+}
+/* Top Banner section CSS end  */
+
+/* Home Page categories CSS start  */
+
+.categoriesSection {
+  padding: 80px 0px;
+}
+
+.categoriesSectionHeading {
+  color: var(--on-surface);
+}
+
+.marquee-content {
+  display: flex;
+  animation: scrolling 10s linear infinite;
+}
+
+.marquee-item {
+  border-radius: 20px;
+  background: var(--background-secondary-color);
+  padding: 6px;
+  flex: 0 0 12vw;
+  margin: 0 4px;
+}
+.marquee-item .marquee-heading {
+  color: var(--on-surface);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+.marquee-item img {
+  display: block;
+  width: 100%;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-144vw);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .marquee-item .marquee-heading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .marquee-item {
+    padding: 10px;
+    flex: 0 0 16vw;
+    margin: 0 8px;
+  }
+}
+
+/* Home Page categories CSS end  */
+
+/* Live Auction section CSS start  */
+
+.liveAuctionSection {
+  background-color: var(--background-footer);
+}
+.liveAuctionSection .liveAuctionSection_heading {
+  color: var(--on-surface);
+}
+.subHeading {
+  border-bottom: 1px solid var(--primary-color);
+}
+.card {
+  border-radius: 20px;
+  background: var(--background-secondary-color);
+  padding: 12px;
+}
+.carousel-control-prev {
+  left: 440px;
+  top: 424px;
+}
+.carousel-control-next {
+  left: 512px;
+  top: 424px;
+}
+.card-body {
+  padding: 0 !important;
+  color: var(--on-surface);
+}
+.card-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.card-body .avatarImg {
+  max-width: 44px;
+  max-height: 44px;
+  aspect-ratio: 1/1;
+}
+.cName {
+  color: var(--secondar-color);
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  border: 1px solid white;
+  background-color: var(--background-second);
+}
+@media only screen and (min-width: 992px) {
+  .cName {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .buttonSmall {
+    color: var(--on-surface);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .caption_2 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+/* Live Auction section CSS end  */
+
+/* Top seller section start  */
+
+.topSellerSection {
+  background-color: var(--background);
+  padding: 80px 0px;
+  color: var(--on-surface);
+}
+.topSellersData {
+  border-radius: 16px;
+  background: var(--background-secondary-color);
+  box-shadow: 0px 3px 16px 0px rgba(47, 83, 109, 0.12);
+  padding: 8px 12px;
+  margin-bottom: 24px;
+}
+.sellerName {
+  color: var(--on-surface);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 992px) {
+  .sellerName {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  .topSellersData {
+    padding: 12px 16px;
+    margin-bottom: 30px;
+  }
+}
+/* Top seller section end */
+
+/* Todays pic section start  */
+.todaysPicSection {
+  background-color: var(--background-footer);
+  padding: 80px 0px;
+}
+.todaysPicSectionBodyCard {
+  width: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--background-secondary-color);
+}
+.todaysPicSectionHeader {
+  color: var(--on-surface);
+}
+/* Todays pic section end  */
+
+/* Popular collection section start  */
+
+.popularCollectionSection {
+  padding: 80px 0px;
+  background-color: var(--background-second);
+}
+.popularCollectionSectionHeading {
+  color: var(--on-surface);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.popularCollectionSectionCard {
+  background: var(--background-secondary-color);
+  border-radius: 10px;
+}
+.cardImg_2 img {
+  max-width: 80px;
+  max-height: 52px;
+  border-radius: 10px;
+}
+.cardImg_1 img {
+  max-width: 80px;
+  max-height: 104px;
+  border-radius: 10px;
+}
+
+.popularCollectionSectionCard .sectionCardBody {
+  width: 410px;
+  height: 64px;
+  left: 20px;
+  top: 193px;
+}
+.popularCollectionSectionCard .sectionCardImg .heartIcon {
+  border-radius: 10px;
+  background-color: var(--background);
+  width: 64px;
+  height: 28px;
+  left: 212px;
+  top: 20px;
+}
+.popularCollectionSectionCard .heartIcon span {
+  color: var(--on-surface);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.collectionCardTextHeading {
+  color: var(--on-surface);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.sectionCardBody {
+  left: 10px;
+  top: 10px;
+}
+
+.avtartItem img {
+  border-radius: 50%;
+  padding: 4px;
+  background-color: var(--background-secondary-color);
+}
+.avtartItem .tickIcon {
+  background: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  left: 151px;
+  top: 48px;
+}
+
+@media only screen and (min-width: 992px) {
+  .popularCollectionSectionHeading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  .cardImg_2 img {
+    max-width: 192px;
+    max-height: 136px;
+  }
+  .cardImg_1 img {
+    max-width: 192px;
+    max-height: 208px;
+  }
+}
+
+/* Popular collection section end  */
+
+/* Footer upper section start  */
+.footerUpperSection {
+  padding: 80px 0px;
+}
+.footerUpperSectionHeading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--on-surface);
+}
+.textHeading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.sectionText {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media only screen and (min-width: 992px) {
+  .footerUpperSectionHeading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  .textHeading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .sectionText {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+/* Footer upper section end  */
+
+/* footer section start */
+.AXfooter {
+  background-color: var(--background-footer);
+  padding: 80px 0px;
+}
+.footerLogo img {
+  max-width: 30px;
+  max-height: 41px;
+  aspect-ratio: 1/1;
+}
+.AXfooter .brandName {
+  color: var(--on-surface);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.brandDetails {
+  color: var(--on-surface);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.myAccountSection .sectionHeading a {
+  color: var(--on-surface);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.myAccountSection .linksBody a {
+  color: var(--on-surface);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.newslatterHeading {
+  color: var(--on-surface);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.newslatterForm input {
+  max-width: 311px;
+  height: 56px;
+  border-radius: 10px;
+  border: 0.5px solid var(--background-secondary-color);
+  background-color: transparent;
+  color: var(--white-2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 12px 18px;
+}
+.newslatterForm button {
+  left: 250px;
+  width: 60px;
+  height: 56px;
+  border-radius: 0px 10px 10px 0px;
+  background: var(--primary-color);
+  border: 0px !important;
+}
+.newslatterForm .form-control:focus {
+  background-color: transparent !important;
+  border: 2px solid var(--background-secondary-color) !important;
+  box-shadow: 0 1px 2px var(--background-secondary-color) !important;
+  transition: 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .newslatterForm button {
+    left: 108px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .AXfooter .brandName {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  .brandDetails {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .myAccountSection .sectionHeading a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .myAccountSection .linksBody a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .newslatterHeading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .newslatterForm input {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 17px 24px;
+  }
+  .newslatterForm button {
+    left: 234px;
+  }
+}
+/* footer section end */

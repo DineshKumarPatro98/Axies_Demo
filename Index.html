@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axies</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <nav class="navbar navbar-expand-lg w-100">
+        <div class="container-fluid ">
+            <a class="navbar-brand d-flex gap-2 align-items-end" href="#">
+                <div class="logo">
+                    <img src="/Assets/Header img/Logo.png" alt="">
+                </div>
+                <div class="brandName text-capitalize">
+                    axies</div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="navbarSearch d-flex align-items-center">
+                    <div class="d-flex w-100 align-items-center w-100" type="text" aria-label="Search">Type your
+                        question
+                        here</div>
+                </div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-capitalize" onclick="openDropdown(event, 'Explore')"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-danger" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-capitalize" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Activity
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-danger" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-capitalize href=" #" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Community
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-danger" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-capitalize href=" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-danger" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-capitalize href=" #" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-danger" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex gap-2">
+                <div class="navbarLoginContainer d-flex gap-2 gap-lg-4">
+                    <div class="notification position-relative d-flex justify-content-center align-items-center">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--on-surface)"
+                                class="bi bi-bell" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                            </svg>
+                            <div class="notificationBubble position-absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                    class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="loginIcon d-flex justify-content-center align-items-center">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M11 6C11 7.65685 9.65685 9 8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6Z"
+                                    fill="var(--on-surface)" />
+                                <path
+                                    d="M2 0C0.895431 0 0 0.895431 0 2V14C0 15.1046 0.895431 16 2 16H14C15.1046 16 16 15.1046 16 14V2C16 0.895431 15.1046 0 14 0H2ZM14 1C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15V14C14 13 13 10 8 10C3 10 2 13 2 14V15C1.44772 15 1 14.5523 1 14V2C1 1.44772 1.44772 1 2 1H14Z"
+                                    fill="var(--on-surface)" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toggleContainer">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 8.5C0.5 8.22386 0.723858 8 1 8H11C11.2761 8 11.5 8.22386 11.5 8.5C11.5 8.77614 11.2761 9 11 9H1C0.723858 9 0.5 8.77614 0.5 8.5Z"
+                                fill="var(--on-surface)" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 4.5C0.5 4.22386 0.723858 4 1 4H11C11.2761 4 11.5 4.22386 11.5 4.5C11.5 4.77614 11.2761 5 11 5H1C0.723858 5 0.5 4.77614 0.5 4.5Z"
+                                fill="var(--on-surface)" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 0.5C0.5 0.223858 0.723858 0 1 0H11C11.2761 0 11.5 0.223858 11.5 0.5C11.5 0.776142 11.2761 1 11 1H1C0.723858 1 0.5 0.776142 0.5 0.5Z"
+                                fill="var(--on-surface)" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Section end -->
+
+    <!-- Top Banner section Start  -->
+    <section class="bannerSection">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col-12 col-sm-6 d-flex flex-column text-start mb-3 mb-sm-0">
+                    <div class="bannerSectionHeading text-start mb-5">
+                        <span class="text-uppercase">Nft Marketplace</span>
+                        <h2>Discover, find and Sell</h2>
+                        <h2>extraordinary monster</h2>
+                        <h2>NFTs</h2>
+                        <div>
+                            Marketplace for monster character <br> cllections non fungible token NFTs
+                        </div>
+                    </div>
+                    <div class="sectionBtn ">
+                        <a class="axBtn_Primary" href="#">
+                            <span>Explore</span>
+                        </a>
+                        <a class="axBtn_Secondary ms-3" href="#">
+                            <span>
+                                Create
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top Banner section End  -->
+
+    <!-- Home Page categories Section Start -->
+    <section class="categoriesSection">
+        <div class="container">
+            <div class="categoriesSectionHeading mb-3 mb-lg-40 d-flex align-items-center">
+                <h4 class="text-capitalize">Brow By Category</h4>
+            </div>
+
+            <div class="marquee">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Music</div>
+                        <img src="/Assets/Marquee_Img/Marquee_1.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Domain Names</div>
+                        <img src="/Assets/Marquee_Img/Marquee_2.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Utility</div>
+                        <img src="/Assets/Marquee_Img/Marquee_3.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Virtual World</div>
+                        <img src="/Assets/Marquee_Img/Marquee_4.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Sports</div>
+                        <img src="/Assets/Marquee_Img/Marquee_1.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Utility</div>
+                        <img src="/Assets/Marquee_Img/Marquee_3.png" alt="">
+                    </div>
+
+
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Music</div>
+                        <img src="/Assets/Marquee_Img/Marquee_1.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Domain Names</div>
+                        <img src="/Assets/Marquee_Img/Marquee_2.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Utility</div>
+                        <img src="/Assets/Marquee_Img/Marquee_3.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Virtual World</div>
+                        <img src="/Assets/Marquee_Img/Marquee_4.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Sports</div>
+                        <img src="/Assets/Marquee_Img/Marquee_1.png" alt="">
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-heading">Utility</div>
+                        <img src="/Assets/Marquee_Img/Marquee_3.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Page categories Section end -->
+
+    <!-- Live Auction section start  -->
+    <section class="liveAuctionSection">
+        <div class="container mt-60 mb-40">
+            <div class="liveAuctionSection_heading d-flex w-100 justify-content-between mb-40 pt-5">
+                <h4 class="text-capitalize">Live Auction</h4>
+                <div class="subHeading"> <a class="link-offset-1" href="">Explore more</a></div>
+            </div>
+
+            <div class="liveAuctionCarousel">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner pb-5">
+                        <div class="carousel-item d-flex justify-content-between">
+                            <div class="card me-2 col-6 col-sm-4">
+                                <img src="/Assets/Auction_IMG/AuctionImg_1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize">"Hamlet Contemplates ...</h5>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img class="avatarImg me-2" src="/Assets/Auction_IMG/CreatorImg_1.png" alt="">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex flex-column">
+                                                <h2 class="caption_2">Creator</h2>
+                                                <span class="cName">Freddie Carpenter</span>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <span class="caption_2">Current Bid</span>
+                                                <span class="buttonSmall">4.89 eTH</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card me-2 col-6 col-sm-4">
+                                <img src="/Assets/Auction_IMG/AuctionImg_2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">"Hamlet Contemplates ...</h5>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img class="avatarImg me-2" src="/Assets/Auction_IMG/CreatorImg_2.png" alt="">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h2 class="caption_2">Creator</h2>
+                                                <span class="cName">Freddie Carpenter</span>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <span class="caption_2">Current Bid</span>
+                                                <span class="buttonSmall">4.89 eTH</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card col-6 col-sm-4">
+                                <img src="/Assets/Auction_IMG/AuctionImg_3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">"Hamlet Contemplates ...</h5>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <img class="avatarImg me-2" src="/Assets/Auction_IMG/CreatorImg_3.png" alt="">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <h2 class="caption_2">Creator</h2>
+                                                <span class="cName">Freddie Carpenter</span>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <span class="caption_2">Current Bid</span>
+                                                <span class="buttonSmall">4.89 eTH</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Live Auction section End -->
+
+    <!-- Top seller section start  -->
+    <section class="topSellerSection">
+        <div class="container d-flex flex-column flex-sm-row" style="gap: 30px;">
+            <div class="col-12 col-sm-6 topSellers">
+                <div class="topSellersHeading d-flex w-100 justify-content-between mb-30">
+                    <h4 class="text-capitalize">Top Seller</h4>
+                    <div class="sectionFilter">
+                        <span>1 Day</span>
+                        <span>1 Week</span>
+                        <span>1 Month</span>
+                    </div>
+                </div>
+                <div class="d-flex gap-1">
+                    <div class="col-6">
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_1.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_2.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_3.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_4.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_1.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_2.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_3.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_4.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-sm-6 topBuyers">
+                <div class="topSellersHeading d-flex w-100 justify-content-between mb-30">
+                    <h4 class="text-capitalize">Top Buyers</h4>
+                    <div class="sectionFilter">
+                        <span>1 Day</span>
+                        <span>1 Week</span>
+                        <span>1 Month</span>
+                    </div>
+                </div>
+                <div class="d-flex gap-1">
+                    <div class="col-6">
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_1.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_2.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_3.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_4.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_1.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_2.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_3.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topSellersData">
+                            <div class="sellerCard d-flex">
+                                <img src="/Assets/TopSeller_IMG/Person_4.png" alt="">
+                                <div class="sellerCardBody ms-3 d-flex flex-column justify-content-center">
+                                    <div class="sellerName">Crispin Berry</div>
+                                    <div class="buttonSmall">214.2 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top seller section end -->
+
+    <!-- Todays pic section start  -->
+    <section class="todaysPicSection">
+        <div class="container">
+            <div class="todaysPicSectionHeader d-flex justify-content-between mb-60">
+                <h4 class="text-capitalize">Today's Picks</h4>
+                <div class="subHeading"> <a class="link-offset-1" href="">Explore more</a></div>
+            </div>
+
+            <div class="todaysPicSectionBody d-flex justify-content-between gap-2">
+                <div class="card col-6 col-sm-3">
+                    <img src="/Assets/Todays_PIcks_img/TodaysPicksImg_1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"The RenaiXance Rising...</h5>
+                        <a href="#" class="d-flex justify-content-between">
+                            <img class="avatarImg me-12" src="/Assets/Auction_IMG/CreatorImg_3.png" alt="">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="d-flex flex-column">
+                                    <h2 class="caption_2">Owned By</h2>
+                                    <span class="cName">SalvadorDali</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="caption_2">Current Bid</span>
+                                    <span class="buttonSmall">4.89 eTH</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card col-6 col-sm-3">
+                    <img src="/Assets/Todays_PIcks_img/TodaysPicksImg_2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"The RenaiXance Rising...</h5>
+                        <a href="#" class="d-flex justify-content-between">
+                            <img class="avatarImg me-12" src="/Assets/Auction_IMG/CreatorImg_3.png" alt="">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="d-flex flex-column">
+                                    <h2 class="caption_2">Owned By</h2>
+                                    <span class="cName">SalvadorDali</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="caption_2">Current Bid</span>
+                                    <span class="buttonSmall">4.89 eTH</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card col-6 col-sm-3">
+                    <img src="/Assets/Todays_PIcks_img/TodaysPicksImg_3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"The RenaiXance Rising...</h5>
+                        <a href="#" class="d-flex justify-content-between">
+                            <img class="avatarImg me-12" src="/Assets/Auction_IMG/CreatorImg_3.png" alt="">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="d-flex flex-column">
+                                    <h2 class="caption_2">Owned By</h2>
+                                    <span class="cName">SalvadorDali</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="caption_2">Current Bid</span>
+                                    <span class="buttonSmall">4.89 eTH</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card col-6 col-sm-3">
+                    <img src="/Assets/Todays_PIcks_img/TodaysPicksImg_4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"The RenaiXance Rising...</h5>
+                        <a href="#" class="d-flex justify-content-between">
+                            <img class="avatarImg me-12" src="/Assets/Auction_IMG/CreatorImg_3.png" alt="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <h2 class="caption_2">Owned By</h2>
+                                    <span class="cName">SalvadorDali</span>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="caption_2">Current Bid</span>
+                                    <span class="buttonSmall">4.89 eTH</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center axBtn_Secondary mx-auto mt-4">Load More</div>
+        </div>
+    </section>
+    <!-- Todays pic section end -->
+
+    <!-- Popular collection section start  -->
+    <section class="popularCollectionSection">
+        <div class="container">
+            <div class="popularCollectionSectionHeading text-capitalize mb-30">
+                Popular Collection
+            </div>
+            <div class="popularCollectionSectionContainer d-flex gap-3 mt-2 flex-column flex-sm-row">
+                <div class="d-flex col-12 col-sm-6 gap-2">
+                    <div class="col-6 popularCollectionSectionCard">
+                        <div class="cardItem position-relative w-100" style="height: 334px;">
+                            <div class="sectionCardImg d-flex justify-content-center py-1 py-sm-10 position-relative">
+                                <div class="cardImg_1 me-2">
+                                    <img src="/Assets/popularSection IMg/IMG_1.png" />
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="cardImg_2 ">
+                                        <img src="/Assets/popularSection IMg/IMG_2.png" />
+                                    </div>
+                                    <div class="cardImg_2">
+                                        <img src="/Assets/popularSection IMg/IMG_3.png" />
+                                    </div>
+                                </div>
+                                <div
+                                    class="heartIcon position-absolute d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_169_137)">
+                                            <path
+                                                d="M14.7145 2.64647C12.9744 0.906815 10.1436 0.906815 8.40393 2.64647L7.99986 3.05031L7.59603 2.64647C5.85637 0.906579 3.02531 0.906579 1.28565 2.64647C-0.418689 4.35081 -0.429756 7.05236 1.25998 8.93072C2.80114 10.6433 7.34643 14.3432 7.53928 14.4998C7.6702 14.6063 7.82773 14.6581 7.98432 14.6581C7.9895 14.6581 7.99468 14.6581 7.99963 14.6578C8.16163 14.6654 8.32481 14.6098 8.45997 14.4998C8.65282 14.3432 13.1986 10.6433 14.7402 8.93048C16.4297 7.05236 16.4186 4.35081 14.7145 2.64647ZM13.69 7.98554C12.4884 9.32042 9.18546 12.0735 7.99963 13.0505C6.8138 12.0738 3.51155 9.32089 2.31018 7.98577C1.13142 6.67561 1.12035 4.80974 2.28452 3.64558C2.87908 3.05125 3.6599 2.75385 4.44072 2.75385C5.22154 2.75385 6.00236 3.05101 6.59693 3.64558L7.48512 4.53377C7.59085 4.6395 7.72412 4.7026 7.86399 4.72474C8.09099 4.77348 8.33729 4.71014 8.51389 4.53401L9.40256 3.64558C10.5919 2.45668 12.5266 2.45692 13.7152 3.64558C14.8794 4.80974 14.8683 6.67561 13.69 7.98554Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_169_137">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <div class="sectionCardBody position-absolute text-center w-100">
+                                <div class="avtartItem position-relative">
+                                    <img src="/Assets/popularSection IMg/AvatarImg_1.png" />
+                                    <span class="position-absolute tickIcon d-flex align-items-baseline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M5.8095 10.6977C5.7124 10.7953 5.58 10.8498 5.4424 10.8498C5.30481 10.8498 5.1724 10.7953 5.07531 10.6977L2.14373 7.76558C1.83946 7.46132 1.83946 6.96805 2.14373 6.6643L2.51083 6.2972C2.81509 5.99293 3.30784 5.99293 3.61211 6.2972L5.4424 8.12749L10.3881 3.18182C10.6923 2.87755 11.1856 2.87755 11.4894 3.18182L11.8565 3.54891C12.1607 3.85318 12.1607 4.34645 11.8565 4.6502L5.8095 10.6977Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="collectionCardText">
+                                    <div class="collectionCardTextHeading">
+                                        Creative Art Collection</div>
+                                    <span class=".caption_2" style="margin-right: 6px;">
+                                        Created by</span>
+                                    <span class="buttonSmall">
+                                        Ralph Garraway</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 popularCollectionSectionCard">
+                        <div class="cardItem position-relative w-100" style="height: 334px;">
+                            <div class="sectionCardImg d-flex justify-content-center py-1 py-sm-10 position-relative">
+                                <div class="cardImg_1 me-2">
+                                    <img src="/Assets/popularSection IMg/IMG_1.png" />
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="cardImg_2 ">
+                                        <img src="/Assets/popularSection IMg/IMG_2.png" />
+                                    </div>
+                                    <div class="cardImg_2">
+                                        <img src="/Assets/popularSection IMg/IMG_3.png" />
+                                    </div>
+                                </div>
+                                <div
+                                    class="heartIcon position-absolute d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_169_137)">
+                                            <path
+                                                d="M14.7145 2.64647C12.9744 0.906815 10.1436 0.906815 8.40393 2.64647L7.99986 3.05031L7.59603 2.64647C5.85637 0.906579 3.02531 0.906579 1.28565 2.64647C-0.418689 4.35081 -0.429756 7.05236 1.25998 8.93072C2.80114 10.6433 7.34643 14.3432 7.53928 14.4998C7.6702 14.6063 7.82773 14.6581 7.98432 14.6581C7.9895 14.6581 7.99468 14.6581 7.99963 14.6578C8.16163 14.6654 8.32481 14.6098 8.45997 14.4998C8.65282 14.3432 13.1986 10.6433 14.7402 8.93048C16.4297 7.05236 16.4186 4.35081 14.7145 2.64647ZM13.69 7.98554C12.4884 9.32042 9.18546 12.0735 7.99963 13.0505C6.8138 12.0738 3.51155 9.32089 2.31018 7.98577C1.13142 6.67561 1.12035 4.80974 2.28452 3.64558C2.87908 3.05125 3.6599 2.75385 4.44072 2.75385C5.22154 2.75385 6.00236 3.05101 6.59693 3.64558L7.48512 4.53377C7.59085 4.6395 7.72412 4.7026 7.86399 4.72474C8.09099 4.77348 8.33729 4.71014 8.51389 4.53401L9.40256 3.64558C10.5919 2.45668 12.5266 2.45692 13.7152 3.64558C14.8794 4.80974 14.8683 6.67561 13.69 7.98554Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_169_137">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <div class="sectionCardBody position-absolute text-center w-100">
+                                <div class="avtartItem position-relative">
+                                    <img src="/Assets/popularSection IMg/AvatarImg_1.png" />
+                                    <span class="position-absolute tickIcon d-flex align-items-baseline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M5.8095 10.6977C5.7124 10.7953 5.58 10.8498 5.4424 10.8498C5.30481 10.8498 5.1724 10.7953 5.07531 10.6977L2.14373 7.76558C1.83946 7.46132 1.83946 6.96805 2.14373 6.6643L2.51083 6.2972C2.81509 5.99293 3.30784 5.99293 3.61211 6.2972L5.4424 8.12749L10.3881 3.18182C10.6923 2.87755 11.1856 2.87755 11.4894 3.18182L11.8565 3.54891C12.1607 3.85318 12.1607 4.34645 11.8565 4.6502L5.8095 10.6977Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="collectionCardText">
+                                    <div class="collectionCardTextHeading">
+                                        Creative Art Collection</div>
+                                    <span class=".caption_2" style="margin-right: 6px;">
+                                        Created by</span>
+                                    <span class="buttonSmall">
+                                        Ralph Garraway</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex col-12 col-sm-6 gap-2">
+                    <div class="col-6 popularCollectionSectionCard">
+                        <div class="cardItem position-relative w-100" style="height: 334px;">
+                            <div class="sectionCardImg d-flex justify-content-center py-1 py-sm-10 position-relative">
+                                <div class="cardImg_1 me-2">
+                                    <img src="/Assets/popularSection IMg/IMG_1.png" />
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="cardImg_2 ">
+                                        <img src="/Assets/popularSection IMg/IMG_2.png" />
+                                    </div>
+                                    <div class="cardImg_2">
+                                        <img src="/Assets/popularSection IMg/IMG_3.png" />
+                                    </div>
+                                </div>
+                                <div
+                                    class="heartIcon position-absolute d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_169_137)">
+                                            <path
+                                                d="M14.7145 2.64647C12.9744 0.906815 10.1436 0.906815 8.40393 2.64647L7.99986 3.05031L7.59603 2.64647C5.85637 0.906579 3.02531 0.906579 1.28565 2.64647C-0.418689 4.35081 -0.429756 7.05236 1.25998 8.93072C2.80114 10.6433 7.34643 14.3432 7.53928 14.4998C7.6702 14.6063 7.82773 14.6581 7.98432 14.6581C7.9895 14.6581 7.99468 14.6581 7.99963 14.6578C8.16163 14.6654 8.32481 14.6098 8.45997 14.4998C8.65282 14.3432 13.1986 10.6433 14.7402 8.93048C16.4297 7.05236 16.4186 4.35081 14.7145 2.64647ZM13.69 7.98554C12.4884 9.32042 9.18546 12.0735 7.99963 13.0505C6.8138 12.0738 3.51155 9.32089 2.31018 7.98577C1.13142 6.67561 1.12035 4.80974 2.28452 3.64558C2.87908 3.05125 3.6599 2.75385 4.44072 2.75385C5.22154 2.75385 6.00236 3.05101 6.59693 3.64558L7.48512 4.53377C7.59085 4.6395 7.72412 4.7026 7.86399 4.72474C8.09099 4.77348 8.33729 4.71014 8.51389 4.53401L9.40256 3.64558C10.5919 2.45668 12.5266 2.45692 13.7152 3.64558C14.8794 4.80974 14.8683 6.67561 13.69 7.98554Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_169_137">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <div class="sectionCardBody position-absolute text-center w-100">
+                                <div class="avtartItem position-relative">
+                                    <img src="/Assets/popularSection IMg/AvatarImg_1.png" />
+                                    <span class="position-absolute tickIcon d-flex align-items-baseline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M5.8095 10.6977C5.7124 10.7953 5.58 10.8498 5.4424 10.8498C5.30481 10.8498 5.1724 10.7953 5.07531 10.6977L2.14373 7.76558C1.83946 7.46132 1.83946 6.96805 2.14373 6.6643L2.51083 6.2972C2.81509 5.99293 3.30784 5.99293 3.61211 6.2972L5.4424 8.12749L10.3881 3.18182C10.6923 2.87755 11.1856 2.87755 11.4894 3.18182L11.8565 3.54891C12.1607 3.85318 12.1607 4.34645 11.8565 4.6502L5.8095 10.6977Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="collectionCardText">
+                                    <div class="collectionCardTextHeading">
+                                        Creative Art Collection</div>
+                                    <span class=".caption_2" style="margin-right: 6px;">
+                                        Created by</span>
+                                    <span class="buttonSmall">
+                                        Ralph Garraway</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 popularCollectionSectionCard">
+                        <div class="cardItem position-relative w-100" style="height: 334px;">
+                            <div class="sectionCardImg d-flex justify-content-center py-1 py-sm-10 position-relative">
+                                <div class="cardImg_1 me-2">
+                                    <img src="/Assets/popularSection IMg/IMG_1.png" />
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="cardImg_2 ">
+                                        <img src="/Assets/popularSection IMg/IMG_2.png" />
+                                    </div>
+                                    <div class="cardImg_2">
+                                        <img src="/Assets/popularSection IMg/IMG_3.png" />
+                                    </div>
+                                </div>
+                                <div
+                                    class="heartIcon position-absolute d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_169_137)">
+                                            <path
+                                                d="M14.7145 2.64647C12.9744 0.906815 10.1436 0.906815 8.40393 2.64647L7.99986 3.05031L7.59603 2.64647C5.85637 0.906579 3.02531 0.906579 1.28565 2.64647C-0.418689 4.35081 -0.429756 7.05236 1.25998 8.93072C2.80114 10.6433 7.34643 14.3432 7.53928 14.4998C7.6702 14.6063 7.82773 14.6581 7.98432 14.6581C7.9895 14.6581 7.99468 14.6581 7.99963 14.6578C8.16163 14.6654 8.32481 14.6098 8.45997 14.4998C8.65282 14.3432 13.1986 10.6433 14.7402 8.93048C16.4297 7.05236 16.4186 4.35081 14.7145 2.64647ZM13.69 7.98554C12.4884 9.32042 9.18546 12.0735 7.99963 13.0505C6.8138 12.0738 3.51155 9.32089 2.31018 7.98577C1.13142 6.67561 1.12035 4.80974 2.28452 3.64558C2.87908 3.05125 3.6599 2.75385 4.44072 2.75385C5.22154 2.75385 6.00236 3.05101 6.59693 3.64558L7.48512 4.53377C7.59085 4.6395 7.72412 4.7026 7.86399 4.72474C8.09099 4.77348 8.33729 4.71014 8.51389 4.53401L9.40256 3.64558C10.5919 2.45668 12.5266 2.45692 13.7152 3.64558C14.8794 4.80974 14.8683 6.67561 13.69 7.98554Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_169_137">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <div class="sectionCardBody position-absolute text-center w-100">
+                                <div class="avtartItem position-relative">
+                                    <img src="/Assets/popularSection IMg/AvatarImg_1.png" />
+                                    <span class="position-absolute tickIcon d-flex align-items-baseline">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M5.8095 10.6977C5.7124 10.7953 5.58 10.8498 5.4424 10.8498C5.30481 10.8498 5.1724 10.7953 5.07531 10.6977L2.14373 7.76558C1.83946 7.46132 1.83946 6.96805 2.14373 6.6643L2.51083 6.2972C2.81509 5.99293 3.30784 5.99293 3.61211 6.2972L5.4424 8.12749L10.3881 3.18182C10.6923 2.87755 11.1856 2.87755 11.4894 3.18182L11.8565 3.54891C12.1607 3.85318 12.1607 4.34645 11.8565 4.6502L5.8095 10.6977Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="collectionCardText">
+                                    <div class="collectionCardTextHeading">
+                                        Creative Art Collection</div>
+                                    <span class=".caption_2" style="margin-right: 6px;">
+                                        Created by</span>
+                                    <span class="buttonSmall">
+                                        Ralph Garraway</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Popular collection section end -->
+
+    <!-- Footer upper section start  -->
+    <section class="footerUpperSection">
+        <div class="container">
+            <div class="footerUpperSectionHeading mb-40">
+                Create and sell your NFTs
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between gap-3 gap-sm-0">
+                <div class="d-flex col-12 col-sm-6">
+                    <div class="col-6 d-flex flex-column text-center" style="color: var(--on-surface);">
+                        <div class="iconsContainer mb-28">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect width="60" height="60" rx="16" fill="#5142FC" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M36.9227 28.0178H41.104C41.5988 28.0178 42 28.3981 42 28.8671V31.8195C41.9942 32.2862 41.5964 32.6633 41.104 32.6688H37.0187C35.8257 32.684 34.7826 31.9098 34.512 30.8084C34.3765 30.1247 34.5667 29.4192 35.0317 28.8809C35.4966 28.3427 36.1888 28.0268 36.9227 28.0178ZM37.1039 31.1219H37.4986C38.0052 31.1219 38.4159 30.7326 38.4159 30.2524C38.4159 29.7722 38.0052 29.3829 37.4986 29.3829H37.1039C36.8616 29.3802 36.6282 29.4695 36.4559 29.631C36.2835 29.7924 36.1866 30.0126 36.1866 30.2423C36.1865 30.7242 36.5956 31.1164 37.1039 31.1219Z"
+                                    fill="#F9F9FA" fill-opacity="0.4" />
+                                <path
+                                    d="M36.9227 26.2788H42C42 22.3154 39.5573 20 35.4187 20H24.5813C20.4427 20 18 22.3154 18 26.2282V34.7718C18 38.6846 20.4427 41 24.5813 41H35.4187C39.5573 41 42 38.6846 42 34.7718V34.4078H36.9227C34.5662 34.4078 32.656 32.5971 32.656 30.3635C32.656 28.1299 34.5662 26.3192 36.9227 26.3192V26.2788Z"
+                                    fill="white" />
+                                <path
+                                    d="M30.4587 26.2788H23.6854C23.177 26.2733 22.768 25.8811 22.7681 25.3992C22.7739 24.9229 23.1829 24.5398 23.6854 24.5398H30.4587C30.9654 24.5398 31.3761 24.9291 31.3761 25.4093C31.3761 25.8895 30.9654 26.2788 30.4587 26.2788Z"
+                                    fill="#948BFB" />
+                            </svg>
+                        </div>
+                        <div class="sectionTextContainer">
+                            <div class="textHeading mb-10">
+                                Set up your wallet</div>
+                            <div class="sectionText">
+                                Wallet that is functional for NFT purchasing. You may have a Coinbase account at this
+                                point,
+                                but very few are actually set up to buy an NFT.</div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex flex-column text-center" style="color: var(--on-surface);">
+                        <div class="iconsContainer mb-28">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect width="60" height="60" rx="16" fill="#47A432" />
+                                <path
+                                    d="M25.104 18H21.048C19.368 18 18 19.38 18 21.0732V25.164C18 26.868 19.368 28.2359 21.048 28.2359H25.104C26.796 28.2359 28.1519 26.868 28.1519 25.164V21.0732C28.1519 19.38 26.796 18 25.104 18Z"
+                                    fill="white" />
+                                <path
+                                    d="M25.104 31.7637H21.048C19.368 31.7637 18 33.1329 18 34.8369V38.9276C18 40.6196 19.368 41.9996 21.048 41.9996H25.104C26.796 41.9996 28.1519 40.6196 28.1519 38.9276V34.8369C28.1519 33.1329 26.796 31.7637 25.104 31.7637Z"
+                                    fill="white" />
+                                <path
+                                    d="M38.9521 18H34.8961C33.2041 18 31.8481 19.38 31.8481 21.0732V25.164C31.8481 26.868 33.2041 28.2359 34.8961 28.2359H38.9521C40.6321 28.2359 42.0001 26.868 42.0001 25.164V21.0732C42.0001 19.38 40.6321 18 38.9521 18Z"
+                                    fill="white" fill-opacity="0.4" />
+                                <path
+                                    d="M38.9521 31.7637H34.8961C33.2041 31.7637 31.8481 33.1329 31.8481 34.8369V38.9276C31.8481 40.6196 33.2041 41.9996 34.8961 41.9996H38.9521C40.6321 41.9996 42.0001 40.6196 42.0001 38.9276V34.8369C42.0001 33.1329 40.6321 31.7637 38.9521 31.7637Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="sectionTextContainer">
+                            <div class="textHeading mb-10">
+                                Create your collection</div>
+                            <div class="sectionText">
+                                Setting up your NFT collection and creating NFTs on NFTs is easy! This guide explains
+                                how to
+                                set up your first collection</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex col-12 col-sm-6">
+                    <div class="col-6 d-flex flex-column text-center" style="color: var(--on-surface);">
+                        <div class="iconsContainer mb-28">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect width="60" height="60" rx="16" fill="#9835FB" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.396 25.8881C21.396 23.1621 23.061 21.3951 25.638 21.3951H34.354C36.94 21.3951 38.605 23.1621 38.605 25.8881V31.1901C38.159 30.8121 36.812 29.8711 36.624 29.7591C35.224 28.9191 33.544 29.2991 32.454 30.7191C32.359 30.8441 30.782 33.1441 30.224 33.4881C30.095 33.5681 29.959 33.6111 29.814 33.6311C29.464 33.6611 29.127 33.4811 28.554 33.0981C28.224 32.8881 27.864 32.6491 27.454 32.4791C25.749 31.7661 24.45 32.9441 23.758 33.7341C23.749 33.7421 21.812 36.1041 21.781 36.1411C21.538 35.5501 21.396 34.8671 21.396 34.1021V25.8881ZM40 25.888C40 22.362 37.731 20 34.354 20H25.638C22.271 20 20 22.362 20 25.888V34.102C20 35.674 20.447 37.013 21.238 38.009C21.247 38.018 21.247 38.028 21.256 38.028C22.043 39.013 23.166 39.666 24.519 39.899C24.531 39.901 24.543 39.903 24.556 39.905C24.903 39.962 25.262 40 25.638 40H34.354C34.535 40 34.7 39.966 34.874 39.953C35.078 39.936 35.289 39.932 35.483 39.898C35.74 39.854 35.976 39.777 36.215 39.703C36.319 39.67 36.43 39.65 36.53 39.612C36.773 39.52 36.996 39.401 37.217 39.279C37.297 39.235 37.383 39.199 37.461 39.15C37.678 39.014 37.875 38.855 38.068 38.689C38.132 38.634 38.201 38.584 38.262 38.526C38.45 38.347 38.616 38.15 38.775 37.944C38.824 37.879 38.876 37.819 38.923 37.752C39.076 37.534 39.208 37.299 39.33 37.054C39.364 36.983 39.4 36.914 39.433 36.842C39.546 36.585 39.64 36.316 39.72 36.034C39.741 35.958 39.762 35.883 39.78 35.805C39.851 35.514 39.902 35.214 39.935 34.9C39.939 34.862 39.95 34.827 39.954 34.789C39.961 34.704 39.96 34.619 39.965 34.534C39.973 34.388 40 34.253 40 34.102V25.888Z"
+                                    fill="white" />
+                                <path
+                                    d="M26.5053 28.9995C27.8668 28.9995 29.0005 27.8694 29.0005 26.5145C29.0005 25.8351 28.7156 25.2126 28.2611 24.7609C27.8086 24.2929 27.1768 23.9995 26.4792 23.9995C25.109 23.9995 24.0005 25.1035 24.0005 26.4681C24.0005 26.6486 24.0218 26.8233 24.0596 26.9931C24.2883 28.1252 25.3086 28.9995 26.5053 28.9995Z"
+                                    fill="white" fill-opacity="0.4" />
+                            </svg>
+                        </div>
+                        <div class="sectionTextContainer">
+                            <div class="textHeading mb-10">
+                                Add your NFTs</div>
+                            <div class="sectionText">
+                                Sed ut perspiciatis un de omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem.</div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex flex-column text-center" style="color: var(--on-surface);">
+                        <div class="iconsContainer mb-28">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect width="60" height="60" rx="16" fill="#DF4949" />
+                                <rect x="23" y="24" width="13" height="4" fill="white" fill-opacity="0.4" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M26.125 18H33.8375C37.225 18 39.9625 19.284 40 22.5478V40.7631C40 40.9671 39.95 41.1711 39.85 41.3511C39.6875 41.6391 39.4125 41.8551 39.075 41.9511C38.75 42.0471 38.3875 41.9991 38.0875 41.8311L29.9875 37.9432L21.875 41.8311C21.6888 41.9259 21.475 41.9871 21.2625 41.9871C20.5625 41.9871 20 41.4351 20 40.7631V22.5478C20 19.284 22.75 18 26.125 18ZM25.2753 27.1437H34.6878C35.2253 27.1437 35.6628 26.7225 35.6628 26.1958C35.6628 25.6678 35.2253 25.2478 34.6878 25.2478H25.2753C24.7378 25.2478 24.3003 25.6678 24.3003 26.1958C24.3003 26.7225 24.7378 27.1437 25.2753 27.1437Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="sectionTextContainer">
+                            <div class="textHeading mb-10">
+                                List them for sale</div>
+                            <div class="sectionText">
+                                Choose between auctions, fixed-price listings, and declining-price listings. You choose
+                                how
+                                you want to sell your NFTs!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer upper section end -->
+
+    <!-- footer section start  -->
+    <footer class="AXfooter">
+        <div class="container row">
+            <div class="aboutBrand col-12 col-sm-3 mb-3 mb-sm-0">
+                <div class="footerLogo d-flex gap-12 mb-10">
+                    <img src="/Assets/Header img/Logo.png" alt="">
+                    <div class="brandName text-capitalize">Axies</div>
+                </div>
+                <div class="brandDetails">Lorem ipsum dolor sit amet,consectetur
+                    adipisicing elit. Quis non, fugit totam vel
+                    laboriosam vitae.</div>
+            </div>
+
+            <div class="col-12 col-sm-6 footerLinks d-flex justify-content-between gap-2 mb-3 mb-sm-0">
+                <div class="col-4 myAccountSection">
+                    <div class="sectionHeading text-capitalize mb-3 mb-sm-4">
+                        <a href="">My Account</a>
+                    </div>
+                    <div class="linksBody d-flex flex-column gap-2 gap-sm-3">
+                        <a href="#">Authors</a>
+                        <a href="#">Collection</a>
+                        <a href="#">Author Profile</a>
+                        <a href="#">Create Collection</a>
+                    </div>
+                </div>
+                <div class="col-4 myAccountSection">
+                    <div class="sectionHeading text-capitalize mb-3 mb-sm-4">
+                        <a href="">My Account</a>
+                    </div>
+                    <div class="linksBody d-flex flex-column gap-2 gap-sm-3">
+                        <a href="#">Authors</a>
+                        <a href="#">Collection</a>
+                        <a href="#">Author Profile</a>
+                        <a href="#">Create Collection</a>
+                    </div>
+                </div>
+                <div class="col-4 myAccountSection">
+                    <div class="sectionHeading text-capitalize mb-3 mb-sm-4">
+                        <a href="">My Account</a>
+                    </div>
+                    <div class="linksBody d-flex flex-column gap-2 gap-sm-3">
+                        <a href="#">Authors</a>
+                        <a href="#">Collection</a>
+                        <a href="#">Author Profile</a>
+                        <a href="#">Create Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="newslatter col-12 col-sm-3">
+                <div class="newslatterHeading text-capitalize mb-3 mb-sm-4">
+                    Subscribe Us
+                </div>
+                <div class="newslatterForm d-flex position-relative">
+                    <input class="w-100 form-control" type="email" placeholder="Info@yourgmail.com"
+                        id="validationCustomUsername" aria-describedby="inputGroupPrepend" required></input>
+                    <button class="position-absolute btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M3.91533 2.18876C4.23957 1.95506 4.67182 1.93688 5.01454 2.14251L20.0145 11.1425C20.3157 11.3232 20.5 11.6487 20.5 12C20.5 12.3513 20.3157 12.6768 20.0145 12.8575L5.01454 21.8575C4.67182 22.0631 4.23957 22.0449 3.91533 21.8112C3.5911 21.5775 3.43715 21.1732 3.52386 20.7831L5.25343 13L10.5 13C11.0523 13 11.5 12.5523 11.5 12C11.5 11.4477 11.0523 11 10.5 11L5.25343 11L3.52386 3.21693C3.43715 2.82677 3.5911 2.42246 3.91533 2.18876Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <div class="invalid-feedback">
+                        Please choose a valid email.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- Scrip LinkS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
